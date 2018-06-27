@@ -1,0 +1,46 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+	<center>
+		<menu>
+			<li><a href = "about.html">Пояснения</a></li>
+			<li><a href = "calc1.html">Расчет дыхательного коэффициента</a></li>
+			<li><a href = "calc2.html">Расчет суррогата дыхательного коэффициента</a></li>
+		</menu>
+
+		<h2>Расчет дыхательного коэффициента</h2>
+
+		<div class="center">
+			<table>
+				<tr>
+					<td>CtcvCO2(ml/dl):</td>
+					<td><input type="text" id="ctcvco2"></input></td>
+				</tr>
+				<tr>
+					<td>CtaCO2(ml/dl):</td>
+					<td><input type="text" id="ctaco2"></input></td>
+				</tr>
+				<tr>
+					<td>CtaO2(ml/dl):</td>
+					<td><input type="text" id="ctao2"></input></td>
+				</tr>
+				<tr>
+					<td>CtcvO2(ml/dl):</td>
+					<td><input type="text" id="ctcvo2"></input></td>
+			</table>
+
+		<button onclick="calculate1()">Вычислить</button>
+
+		<p id="answer"s></p>
+
+		</div>
+
+		<div id="footer">
+			<p>Г.Р.Райкин и И.Д.Райкин</p>
+		</div>
+	</center>
+</body>
+</html>
