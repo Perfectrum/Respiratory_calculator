@@ -1,157 +1,122 @@
-*{
-	font-family: Arial;
-	font-size: 99%;
+* {
+    font-family: Arial;
 }
 
-menu
-{
-	margin: 0;
-	text-align: center;
+body {
+    text-align: center;
+    margin: auto;
 }
 
-li
-{
-	display: inline-block;
-	margin: 1vw;
-	margin-left: 3vw;
+menu {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    list-style-type: none;
+    text-decoration: none;
+    color: #4682B4;
 }
 
-li a
-{
-	text-decoration: none;
-	position: relative;
-	font-weight: bold;
-	padding: 0 0 3px 0;
-	color: #4682B4;/*Цвет текста*/
+menu li {
+    display: inline;
+    margin: 0;
+    padding: 0 40px;
+    text-align: center;
 }
 
-
-li a:after {
-	content: '';
-	position: absolute;
-	height: 2px;
-	width: 100%;
-	left: 0;
-	bottom: 0;
-	background-color: #4682B4;/*Цвет подчеркивания*/
-	-webkit-transition: all .1s ease;
-	transition: all 0.3 s ease;  
-	-webkit-transform: scaleX(0);
-	-ms-transform: scaleX(0);
-	transform: scaleX(0);
+menu a {
+    text-decoration: none;
+    color: #4682B4;
 }
 
-
-li a:hover:after {
-	-webkit-transform: scaleX(1);
-	-ms-transform: scaleX(1);
-	transform: scaleX(1);
+.horisontal {
+    display: inline;
+    margin: 1vw;
 }
 
-.hide {display: none;}
-
-.hide + label ~ div{display: none;}
-
-.hide + label
-{
-	padding: 0;
-	color: #4682B4;
-	cursor: pointer;
-	display: inline-block; 
+#index_menu {
+    position: relative;
+    top: 0;
 }
 
-.hide:checked + label
-{
-	color: #4682B4;
-	border-bottom: 0;
+#index_menu li {
+    margin: 15vh auto;
+    text-align: center;
 }
 
-.hide:checked + label + div
-{
-	display: block; 
-	background: #efefef;
-	-moz-box-shadow: inset 3px 3px 10px #7d8e8f;
-	-webkit-box-shadow: inset 3px 3px 10px #7d8e8f;
-	box-shadow: inset 3px 3px 10px #7d8e8f;
-	padding: 10px; 
+#index_menu a {
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 15px 40px;
+    border: 2px solid #4682B4;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 400;
+    letter-spacing: 1.2px;
+    line-height: 1;
 }
 
-a.main_link
-{
-	display: inline-block;
-	text-decoration: none;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	margin: 5% 5%;
-	padding: 15px 20px;
-	font-weight: bold;
-	font-family: 'Montserrat', sans-serif;
-	-webkit-transition: 0.4s ease-in-out;
-	-o-transition: 0.4s ease-in-out;
-	transition: 0.4s ease-in-out;
+#index_menu a:after {
+    content: "";
+    display: block;
+    border: 2px solid #4682B4;
+    position: absolute;
+    top: -7px;
+    right: 5px;
+    bottom: -7px;
+    left: 5px;
 }
 
-.main a
-{
-	box-sizing: border-box;
-	border: 2px solid #4682B4;
-	color: #4682B4;
-	font-size: 20px;
-	font-style: italic;
-	font-weight: 400;
-	letter-spacing: 1.2px;
-	line-height: 1;
-	padding: 15px 40px;
-	position: relative;
+li {
+    text-align: left;
 }
 
-.main a:after {
-	content: "";
-	display: block;
-	border: 2px solid #4682B4;
-	position: absolute;
-	top: -5px;
-	right: 3px;
-	bottom: -5px;
-	left: 3px;
+label {
+    color: #4682B4;
 }
 
-.center
-{
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	height: 30%;
-	width: 50%;
-	margin: -15% 0 0 -25%;
+.content {
+    left: 25%;
+    width: 50%;
 }
 
-button{
-	display: inline-block;
-	font-weight: 700;
-	text-decoration: none;
-	user-select: nosne;
-	padding: .5em 2em;
-	outline: none;
-	border: 2px solid;
-	border-radius: 1px;
-	transition: 0.2s;
-	margin: 5%;
-}
-button:hover { background: white; }
-button:active { background: black; }
-
-#about
-{
-	width: 50%;
+.hidden {
+    display: none;
 }
 
-#footer
-{
-	top: 90%;
-	left: 0; 
-	/*bottom: 0;*/
-	padding: 0; /* Поля вокруг текста */
-	color: #000; /* Цвет текста */
-	width: 90%; /* Ширина слоя */
+.hidden+label~div {
+    display: none;
+}
+
+.hidden:checked+label+div {
+    display: block;
+}
+
+table {
+    height: 60%;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+@media(max-width: 500px), (max-height: 500px) {
+    footer {
+        position: inherit;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+    }
+}
+
+@media(max-width: 1000px) {
+    menu {}
+    menu li {
+        display: block;
+    }
 }

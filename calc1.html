@@ -1,46 +1,51 @@
 <html>
+
 <head>
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<script type="text/javascript" src="script.js"></script>
+	<script src="script.js"></script>
+	<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </head>
+
 <body>
 	<center>
 		<menu>
-			<li><a href = "about.html">Пояснения</a></li>
-			<li><a href = "calc1.html">Расчет дыхательного коэффициента</a></li>
-			<li><a href = "calc2.html">Расчет суррогата дыхательного коэффициента</a></li>
+			<li><a href="about.html">РџРѕСЏСЃРЅРµРЅРёСЏ</a></li>
+			<li><a href="calc1.html">Р Р°СЃС‡РµС‚ РґС‹С…Р°С‚РµР»СЊРЅРѕРіРѕ РєРѕСЌС„С„РёС†РёРµРЅС‚Р°</a></li>
+			<li><a href="calc2.html">Р Р°СЃС‡РµС‚ СЃСѓСЂСЂРѕРіР°С‚Р° РґС‹С…Р°С‚РµР»СЊРЅРѕРіРѕ РєРѕСЌС„С„РёС†РёРµРЅС‚Р°</a></li>
 		</menu>
 
-		<h2>Расчет дыхательного коэффициента</h2>
+		<h2>Р Р°СЃС‡РµС‚ РґС‹С…Р°С‚РµР»СЊРЅРѕРіРѕ РєРѕСЌС„С„РёС†РёРµРЅС‚Р°</h2>
 
-		<div class="center">
-			<table>
-				<tr>
-					<td>CtcvCO2(ml/dl):</td>
-					<td><input type="text" id="ctcvco2"></input></td>
-				</tr>
-				<tr>
-					<td>CtaCO2(ml/dl):</td>
-					<td><input type="text" id="ctaco2"></input></td>
-				</tr>
-				<tr>
-					<td>CtaO2(ml/dl):</td>
-					<td><input type="text" id="ctao2"></input></td>
-				</tr>
-				<tr>
-					<td>CtcvO2(ml/dl):</td>
-					<td><input type="text" id="ctcvo2"></input></td>
-			</table>
+		<table>
+			<tr>
+				<td>$$C_{tcv}CO_2(\frac{ml}{dl}):$$</td>
+				<td><input type="text" id="ctcvco2"></input>
+				</td>
+			</tr>
+			<tr>
+				<td>$$C_{ta}CO_2(\frac{ml}{dl}):$$</td>
+				<td><input type="text" id="ctaco2"></input>
+				</td>
+			</tr>
+			<tr>
+				<td>$$C_{ta}O_2(\frac{ml}{dl}):$$</td>
+				<td><input type="text" id="ctao2"></input>
+				</td>
+			</tr>
+			<tr>
+				<td>$$C_{tcv}O_2(\frac{ml}{dl}):$$</td>
+				<td><input type="text" id="ctcvo2"></input>
+				</td>
+		</table>
 
-		<button onclick="calculate1()">Вычислить</button>
+		<button onclick="calculate_coef();">Р’С‹С‡РёСЃР»РёС‚СЊ</button>
 
-		<p id="answer"s></p>
+		<p id="answer" s></p>
 
-		</div>
-
-		<div id="footer">
-			<p>Г.Р.Райкин и И.Д.Райкин</p>
-		</div>
+		<footer>
+			<p>Р.Р”.Р Р°Р№РєРёРЅ Рё Р“.Р .Р Р°Р№РєРёРЅ</p>
+		</footer>
 	</center>
 </body>
+
 </html>

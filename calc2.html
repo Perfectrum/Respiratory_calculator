@@ -1,49 +1,58 @@
 <html>
+
 <head>
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<script type="text/javascript" src="script.js"></script>
+	<script src="script.js"></script>
+	<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </head>
+
 <body>
 	<center>
 		<menu>
-			<li><a href = "about.html">Пояснения</a></li>
-			<li><a href = "calc1.html">Расчет дыхательного коэффициента</a></li>
-			<li><a href = "calc2.html">Расчет суррогата дыхательного коэффициента</a></li>
+			<li><a href="about.html">РџРѕСЏСЃРЅРµРЅРёСЏ</a></li>
+			<li><a href="calc1.html">Р Р°СЃС‡РµС‚ РґС‹С…Р°С‚РµР»СЊРЅРѕРіРѕ РєРѕСЌС„С„РёС†РёРµРЅС‚Р°</a></li>
+			<li><a href="calc2.html">Р Р°СЃС‡РµС‚ СЃСѓСЂСЂРѕРіР°С‚Р° РґС‹С…Р°С‚РµР»СЊРЅРѕРіРѕ РєРѕСЌС„С„РёС†РёРµРЅС‚Р°</a></li>
 		</menu>
 
-		<h2>Расчет суррогата дыхательного коэффициента</h2>
-		<div class="center">
+		<h2>Р Р°СЃС‡РµС‚ СЃСѓСЂСЂРѕРіР°С‚Р° РґС‹С…Р°С‚РµР»СЊРЅРѕРіРѕ РєРѕСЌС„С„РёС†РёРµРЅС‚Р°</h2>
 		<table>
 			<tr>
-				<td>H<sub>в</sub>(g/dl):</td>
-				<td><input type = "text" id = "h"></input></td>
+				<td>$$H_пїЅ(\frac{g}{dl}):$$</td>
+				<td><input type="text" id="h"></input>
+				</td>
 			</tr>
 			<tr>
-				<td>P<sub>cv</sub>CO<sub>2</sub>(мм рт ст):</td>
-				<td><input type = "text" id = "pvco2"></input></td>
+				<td>$$P_{cv}CO_2(РјРј\:СЂС‚\:СЃС‚):$$</td>
+				<td><input type="text" id="pvco2"></input>
+				</td>
 			</tr>
 			<tr>
-				<td>P<sub>a</sub>CO<sub>2</sub>(мм рт ст):</td>
-				<td><input type = "text" id = "paco2"></input></td>
+				<td>$$P_aCO_2(РјРј\:СЂС‚\:СЃС‚):$$</td>
+				<td><input type="text" id="paco2"></input>
+				</td>
 			</tr>
 			<tr>
-				<td>S<sub>a</sub>O<sub>2</sub>(%):</td>
-				<td><input type = "text" id = "sao2"></input></td>
+				<td>$$S_aO_2(\%):$$</td>
+				<td><input type="text" id="sao2"></input>
+				</td>
 			</tr>
 			<tr>
-				<td>S<sub>cv</sub>O<sub>2</sub>(%):</td>
-				<td><input type = "text" id = "scvo2"></input></td>
+				<td>$$S_{cv}O_2(\%):$$</td>
+				<td><input type="text" id="scvo2"></input>
+				</td>
 			</tr>
 			<tr>
 				<p id="ans2"></p>
 			</tr>
-			</table>
-		<button onclick="calculate2()">Вычислить</button>
+		</table>
+
+		<button onclick="calculate_sur_coef();">Р’С‹С‡РёСЃР»РёС‚СЊ</button>
+
 		<p id="answer"></p>
-		</div>
-		<div id="footer">
-			<p>Г.Р.Райкин и И.Д.Райкин</p>
-		</div>
+		<footer>
+			<p>Р.Р”.Р Р°Р№РєРёРЅ Рё Р“.Р .Р Р°Р№РєРёРЅ</p>
+		</footer>
 	</center>
 </body>
+
 </html>
